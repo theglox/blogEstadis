@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+    <title>Prueba de Hipotesis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        p {
+
+            font-family: 'Luckiest Guy';
+            color:White;
+            font-size: 20px;
+
+        }
+        .invert {filter: invert(100%);}
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: #222;}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+    <body class="w3-black">
+
+        <!-- Icon Bar (Sidebar - hidden on small screens) -->
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+            <!-- Avatar image in top left corner -->
+            <img src="imagenes/preloader.png" style="width:100%">
+            <a href="hom.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>Inicio</p>
+            </a>
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p> ¿Qué es?</p>
+            </a>
+            <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i class="fa fa-eye w3-xxlarge"></i>
+                <p>EJEMPLO</p>
+            </a>
+
+        </nav>
+
+        <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+                <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+                <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">DEFINICION</a>
+                <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">EJEMPLO</a>
+                <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="w3-padding-large" id="main">
+            <!-- Header/Home -->
+            <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+
+                <p>Youssef||Diego||Brayan||Nicolas||Jose.</p>
+                <img src="imagenes/banner.png" alt="banner" class="w3-image" width="992" height="1108">
+            </header>
+
+            <!-- About Section -->
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+                <h2 class="w3-text-light-grey">Prueba de Hipotesis para la varianza poblacional</h2>
+                <hr style="width:200px" class="w3-opacity">
+                <p>Con σ2 o para denotar el valor hipotético de la varianza poblacional, las tres formas de una prueba de hipótesis son: </p>
+                <center><img src="formulas/phv.png" alt="boy" class="w3-image" width="400" height="700"></center>
+                <p>Estas tres pruebas son semejantes a las pruebas de hipótesis de las sesiones anteriores, para pruebas de una o dos colas para medias y proporciones poblacionales.</p>    
+                <p style="">En una prueba de hipótesis para la varianza poblacional se emplean el valor hipotético de la varianza poblacional σ2 o y la varianza muestral s2 para calcular el valor estadístico de prueba X2. Si la población tiene una distribución normal, el estadístico de prueba es el siguiente:</p>
+                <center><img src="formulas/eph.png" alt="boy" class="w3-image" width="500" height="1000"></center>
+                <p> Una vez calculado el estadístico de prueba X2, para determinar si se acepta o se rechaza la hipótesis nula se encuentra el valor crítico y se realiza la comparación.</p>
+
+
+                <!-- Portfolio Section -->
+                <div class="w3-padding-64 w3-content" id="photos">
+                    <h2 class="w3-text-light-grey">Ejemplo</h2>
+                    <hr style="width:200px" class="w3-opacity">
+                    <P> La St. Louis Metro Bus Company de Estados Unidos, desea dar una
+                        imagen de confiabilidad haciendo que sus conductores sean puntuales en los
+                        horarios de llegada a las paradas. La empresa desea que haya poca
+                        variabilidad en dichos tiempos. En términos de la varianza de los tiempos de
+                        llegada de las paradas, la empresa desea que la varianza sea de 4 minutos o
+                        menos. Esta prueba de hipótesis se realiza con un nivel de significancia de α =
+                        0.05
+                    </P>
+                    <P>Asuma que en una muestra aleatoria de 24 llegadas a cierta parada en una
+                        intersección en el centro de la ciudad, la varianza muestral encontrada es
+                        s
+                        2=4.9
+                    </P>
+
+                <div class="w3-container w3-blue">
+                    <P><strong>Paso 1: </strong>Formular Hipotesis</P>
+                    <p>  Ho: σ2 ≤ 4 <br>
+                         Ha: σ2 > 4
+                    </p>
+                </div> 
+                    
+                <div class="w3-container w3-green">    
+                    <p><strong>Paso 2: </strong>Nivel de significancia de α = 0.05, como la prueba es de una sola
+                        cola (la del lado derecho), se considera una distribución X2.
+                    </p>
+                </div>
+
+                <div class="w3-container w3-red">
+                    <p><strong>Paso 3: </strong>Obtenemos el valor critico X2 utilizando la tabla de valores de esta
+                        distribución:<br>
+                         Grados de libertad = n-1= 24 – 1 = 23 (renglones de tabla).<br>
+                         Probabilidad: nivel de significancia α = 0.05 (columnas de tabla).<br>
+                         Buscando estos valores en la tabla tenemos que X2
+                        c = 35.172.
+                    </p>
+                </div>
+                <div class="w3-container w3-yellow">
+                    <H2 style="color:#FF0000"><strong>Nota: </strong><a href="https://studylib.es/doc/4721462/tabla-de-la-distribución-chi-cuadrado-g%3Dgrados-de-liberta..." target="_blank">Click aqui para consultar la tabla de distribucion Chi-Cuadrado</a></H2>
+                </div>
+                    <p><strong>Paso 4: </strong>Calcular el estadístico de prueba X2</p>
+                    <center><img src="formulas/fe.png"  alt="boy" class="w3-image" width="500" height="900"></center>
+                    <p>Si el estadístico de prueba es menor que el valor crítico, se rechaza H0, de manera contraria se acepta. Por lo tanto para esta prueba, tenemos que:<br>
+                        28.18 < 35.172, se rechaza H0
+                    </p>
+                    <div class="w3-container w3-white">
+                    <p style="color:black"><strong>Paso 5: </strong> Se concluye que existe evidencia suficiente para rechazar H0, en tal
+                        caso habrá que tomar medidas para reducir la varianza poblacional.</p>
+                    </div>
+
+
+                </div>
+
+                <!-- Footer -->
+
+                <!-- END PAGE CONTENT -->
+            </div>
+        </div>
+    </body>
+</html>
