@@ -32,7 +32,7 @@
         <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
             <!-- Avatar image in top left corner -->
             <img src="imagenes/preloader.png" style="width:100%">
-            <a href="hom.jsp" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <a href="hom.html" class="w3-bar-item w3-button w3-padding-large w3-black">
                 <i class="fa fa-home w3-xxlarge"></i>
                 <p>Inicio</p>
             </a>
@@ -95,13 +95,21 @@
                         s
                         2=4.9
                     </P>
+
+                <div class="w3-container w3-blue">
                     <P><strong>Paso 1: </strong>Formular Hipotesis</P>
                     <p>  Ho: σ2 ≤ 4 <br>
                          Ha: σ2 > 4
                     </p>
+                </div> 
+                    
+                <div class="w3-container w3-green">    
                     <p><strong>Paso 2: </strong>Nivel de significancia de α = 0.05, como la prueba es de una sola
                         cola (la del lado derecho), se considera una distribución X2.
                     </p>
+                </div>
+
+                <div class="w3-container w3-red">
                     <p><strong>Paso 3: </strong>Obtenemos el valor critico X2 utilizando la tabla de valores de esta
                         distribución:<br>
                          Grados de libertad = n-1= 24 – 1 = 23 (renglones de tabla).<br>
@@ -109,14 +117,19 @@
                          Buscando estos valores en la tabla tenemos que X2
                         c = 35.172.
                     </p>
-                    <p><strong>Nota: </strong><a href="https://studylib.es/doc/4721462/tabla-de-la-distribución-chi-cuadrado-g%3Dgrados-de-liberta..." target="_blank">Click aqui para consultar la tabla de distribucion Chi-Cuadrado</a></p>
+                </div>
+                <div class="w3-container w3-yellow">
+                    <H2 style="color:#FF0000"><strong>Nota: </strong><a href="https://studylib.es/doc/4721462/tabla-de-la-distribución-chi-cuadrado-g%3Dgrados-de-liberta..." target="_blank">Click aqui para consultar la tabla de distribucion Chi-Cuadrado</a></H2>
+                </div>
                     <p><strong>Paso 4: </strong>Calcular el estadístico de prueba X2</p>
                     <center><img src="formulas/fe.png"  alt="boy" class="w3-image" width="500" height="900"></center>
                     <p>Si el estadístico de prueba es menor que el valor crítico, se rechaza H0, de manera contraria se acepta. Por lo tanto para esta prueba, tenemos que:<br>
                         28.18 < 35.172, se rechaza H0
                     </p>
-                    <p><strong>Paso 5: </strong> Se concluye que existe evidencia suficiente para rechazar H0, en tal
+                    <div class="w3-container w3-white">
+                    <p style="color:black"><strong>Paso 5: </strong> Se concluye que existe evidencia suficiente para rechazar H0, en tal
                         caso habrá que tomar medidas para reducir la varianza poblacional.</p>
+                    </div>
 
 
                 </div>
