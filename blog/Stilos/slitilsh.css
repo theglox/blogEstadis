@@ -23,11 +23,12 @@ color:tomato;
 }
 iframe{
 width: 100%;
+height: 250px;
 border-style: none;
 
-
-
 }
+
+
 .contenido {
  background-image:url("../imagenes/black.png");
   padding: 10px;

@@ -6,12 +6,21 @@ body {
   margin: 0;
 }
 
+p {
+    
+    font-family: 'Luckiest Guy';
+    color:white;
+    font-size: 25px;
+
+}
+
 /* Style the header  https://www.w3schools.com/css/css_image_gallery.asp*/
 .header {
     background-color: black;
     padding: 5px;
     text-align: center;
     background-image:url("../imagenes/banner.png");
+    height: 200px;
 }
 
 /* Style the top navigation bar */
@@ -28,6 +37,10 @@ body {
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
+    font-family: 'Luckiest Guy';
+    color:white;
+    font-size: 25px;
+
 }
 
 /* Change color on hover */
