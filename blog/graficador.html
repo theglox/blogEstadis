@@ -33,21 +33,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <body>
         
 <form>
+  
   <div id="sonatabla" name ="tabla" class="w3-container w3-white">
         <script src="grafica.js"></script>
 <select width="200" height="250" id="tips" onclick="grafica()" >
-  <option value="pie">torta</option>
-  <option value="bar">barras</option>
-  <option value="line">lineal</option>
-  <option value="radar">radar</option>
+  <option value="2">2 grados libertad</option>
+  <option value="5">5 grados de libertad</option>
+  <option value="10">10 grados de libertad</option>
+  
 </select>
 
          
     </div>
 
     <div  class="w3-container w3-white">
- 
-<canvas id="myChart" width="700" height="700"></canvas>
+ <canvas id="myChart" width="400" height="150" aria-label="Hello ARIA World" role="img"></canvas>
+<canvas id="MyChart" width=100" height="100"></canvas>
          
     </div>
 </form>   
